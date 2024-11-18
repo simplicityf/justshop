@@ -6,6 +6,7 @@ import Shop from './pages/Shop'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Cart from './pages/Cart'
+import Footer from './components/Nav/Footer'
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
 
   <Route path="*" element={<NotFound />} />
 </Routes>
+<Footer />
 </BrowserRouter>
 
     </>

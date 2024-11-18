@@ -1,12 +1,16 @@
-import flowbite from "flowbite-react/tailwind";
+import flowbite from "flowbite/plugin";
+import scrollbarHide from "tailwind-scrollbar-hide";
 
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    flowbite.content(),
-    "./layouts/**/*.html", "./content/**/*.md", "./content/**/*.html", "./src/**/*.js ", "./src/**/*.jsx"
+    "./node_modules/flowbite-react/**/*.js", // Flowbite React components
+    "./layouts/**/*.html", 
+    "./content/**/*.md", 
+    "./content/**/*.html", 
+    "./src/**/*.js", 
+    "./src/**/*.jsx",
+    "./node_modules/flowbite/**/*.js", // Flowbite core components
   ],
-  // make sure to safelist these classes when using purge
   safelist: [
     'w-64',
     'w-1/2',
@@ -21,13 +25,12 @@ export default {
     'leading-9',
     'shadow-lg'
   ],
-  // enable dark mode via class strategy
   darkMode: 'class',
   theme: {
     extend: {},
   },
   plugins: [
-    flowbite.plugin(),
+    flowbite, // Flowbite plugin
+    scrollbarHide, // Tailwind Scrollbar Hide plugin
   ],
-}
-
+};

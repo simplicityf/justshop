@@ -1,15 +1,13 @@
-import shoe from "../../assets/images/shoes/shoe.jpg"
-import shoe1 from "../../assets/images/shoes/shoe1.jpg"
-import shoe2 from "../../assets/images/shoes/shoe2.jpg"
-import shoe3 from "../../assets/images/shoes/shoe3.jpg"
-import shoe4 from "../../assets/images/shoes/shoe4.jpg"
+import phone from "../../assets/images/phones/phone.jpg"
+import phone1 from "../../assets/images/phones/phone1.jpg"
+import phone2 from "../../assets/images/phones/phone2.jpg"
+import phone3 from "../../assets/images/phones/phone3.jpg"
+import phone4 from "../../assets/images/phones/phone4.jpg"
 import { useNavigate } from "react-router-dom"
 
-
-const SliderShoe = () => {
+const SliderPhone = () => {
 
     const navigate = useNavigate()
-    
     const scrollCarousel = (direction) => {
         const carousel = document.querySelector('.overflow-x-auto');
         const itemWidth = carousel.querySelector('.max-w-xs').offsetWidth;
@@ -23,7 +21,7 @@ const SliderShoe = () => {
         <>
 
 
-            <h5 className="text-white font-medium rounded-lg text-lg px-5 py-2.5 text-left mt-6 ml-5">Shoes
+            <h5 className="text-white font-medium rounded-lg text-lg px-5 py-2.5 text-left mt-6 ml-5">Mobile Phones
                 {/* <span className="text-right"> Shop Now! </span> */}
             </h5>
 
@@ -39,7 +37,7 @@ const SliderShoe = () => {
 
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-84">
                            
-                            <img className="p-8 rounded-t-lg w-full h-64" src={shoe} alt="product image" />
+                            <img className="p-8 rounded-t-lg w-full h-64" src={phone} alt="product image" />
 
                             <div className="px-5 pb-5">
                                
@@ -55,7 +53,7 @@ const SliderShoe = () => {
 
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-84">
                             
-                            <img className="p-8 rounded-t-lg w-full h-64" src={shoe1} alt="product image" />
+                            <img className="p-8 rounded-t-lg w-full h-64" src={phone1} alt="product image" />
 
                             <div className="px-5 pb-5">
                                 
@@ -71,7 +69,7 @@ const SliderShoe = () => {
 
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-84">
                             
-                            <img className="p-8 rounded-t-lg w-full h-64" src={shoe2} alt="product image" />
+                            <img className="p-8 rounded-t-lg w-full h-64" src={phone2} alt="product image" />
 
                             <div className="px-5 pb-5">
                                
@@ -87,7 +85,7 @@ const SliderShoe = () => {
 
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-84">
                            
-                            <img className="p-8 rounded-t-lg w-full h-64" src={shoe3} alt="product image" />
+                            <img className="p-8 rounded-t-lg w-full h-64" src={phone3} alt="product image" />
 
                             <div className="px-5 pb-5">
                                
@@ -103,7 +101,7 @@ const SliderShoe = () => {
 
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-84">
                            
-                            <img className="p-8 rounded-t-lg w-full h-64" src={shoe4} alt="product image" />
+                            <img className="p-8 rounded-t-lg w-full h-64" src={phone4} alt="product image" />
 
                             <div className="px-5 pb-5">
                                
@@ -143,4 +141,4 @@ const SliderShoe = () => {
     )
 }
 
-export default SliderShoe
+export default SliderPhone
